@@ -1,0 +1,10 @@
+services:
+  node:
+    container_name: node
+    image: node:22-alpine
+    stdin_open: true
+    volumes:
+      - ./:/node22
+    working_dir: /node22
+    ports:
+      - "3000:3000"
